@@ -98,8 +98,7 @@ $(function(){
 
 function changeMembers(name, height){
 	var $contents = $('#contents'),
-	$menu_contents=$('.menu_contents'),
-	$contents_student = $('.contents_student');
+	$menu_contents=$('.menu_contents');
 	
 	$menu_contents.empty();
 
@@ -108,6 +107,8 @@ function changeMembers(name, height){
 	$parentFrame = $('.member_main', parent.document);
 	$contents.css('height', height+'px');
 	$parentFrame.css('height', height+'px');
+
+	var $contents_student = $('.contents_student');
 	$contents_student.fadeIn(1000);
 	console.log($contents_student);
 }
