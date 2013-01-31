@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="secureLab" />
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Dankook Secure & OS Lab</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+		<!--<link href="css/style.css" rel="stylesheet"/>-->
+		<link href="css/pygments.css" rel="stylesheet"/>
+		<link href="css/slideshow.css" rel="stylesheet"/>
+		<link href="css/camera.css" rel="stylesheet"/>
+		<style type="text/css">
+			#wrap {width:980px; margin: 0 auto; position: relative;}
+			#header{ width : 100%; position: relative; }
+			.nav-top {width:  100%; height: 30px; display: inline-block; position:relative; top:0;  background-color: #09295b;}
+			.nav-top i{margin: 0 5px 0 0;}
+			.nav-top span {font: normal 10px Dotum; color: #fff;}
+			.nav-top .home {position: absolute; right: 100px; margin: 7px 0 0 0; font : normal 12px Dotum; color : #fff; text-decoration: none;}
+			.nav-top .login {position: absolute; right: 30px; margin: 7px 0 0 10px; font : normal 12px Dotum; color : #fff; text-decoration: none;}
+			.menu {padding: 0; margin: 20px auto; margin-bottom: 0; list-style: none; width: 980px; height: 100px;}
+			.menu li {float: left;}
+			.logo {width: 298px; height: 86px; margin: 0 30px 30px 0; }
+			.notice {width: 85px; height: 30px; margin:  30px 0 30px 0;  }
+			.members {width: 128px; height: 30px; margin:  30px 0 30px 0; }
+			.publications {width: 128px; height: 30px; margin:  30px 0 30px 0; }
+			.project {width: 110px; height: 30px; margin:  30px 0 30px 0; }
+			.gallery {width: 110px; height: 30px; margin:  30px 0 30px 0;  }
+			.link {width: 84px; height: 30px; margin:  30px 0 30px 0;  }
+
+			#contents { width:980px; height: 600px; position: relative; margin: 0 auto; }
+			.camera_wrap .camera_pag .camera_pag_ul {position: absolute; bottom: 0; right: 0;}
+			.camera_wrap .camera_pag .camera_pag_ul li {background-color: #fff;}
+			.camera_wrap .camera_pag .camera_pag_ul li.cameracurrent > span {background-color: #09295b;}
+
+			#footer {float:left; width: 100%; height:35px; margin: 0 auto; text-align: center; border-top: 1px solid #aaa; padding-top: 7px; background-color: #09295b; background: url('./img/footer.png') no-repeat; }
+			#footer .csos_foot { float: left; width: 300px; height: 30px; margin-top: 5px; margin-right: 140px; font : bold 12px Dotum; color: #fff; letter-spacing: -1px; text-indent: -9999px;}
+			#footer .address { float: left; font : normal 7px Dotum; color: #fff; letter-spacing: -1px; margin-right: 10px; text-indent: -9999px;}
+			#footer .tel { float: left; font : normal 7px Dotum; color: #fff; margin-right: 10px; text-indent: -9999px;}
+			#footer .copyright {float: left; font : normal 7px Dotum; color: #fff;  margin-top: 5px; text-indent: -9999px;}
+
+			.remote {width: 30px; height: 30px; position: fixed; top: 190px; right: 150px; border: 1px solid #aaa; padding-top: 5px;  }
+			.remote .up{text-indent: center; padding-left: 5px; font: normal 14px Dotum; text-decoration: none; color: #000;}
+		</style>
+	</head>
+	<body>
+		<div id="wrap" class="hide">
+			<div class="nav-top">
+				<a class="home" href="./index.html">
+					<i class="icon-home icon-white"></i>Home
+				</a>
+				<a class="login" href="#">
+					<i class="icon-cog icon-white"></i>Login
+				</a>
+			</div>
+			<div id="header">
+				
+				<ul class="menu">
+					<li class="logo">
+						<a href="./index.html" alt="단국대학교 보안연구실"><img src="./img/mainImg/csos.png" style="width:298px; height: 86px;" /></a>
+					</li>
+					<li class="notice">
+						<a href="#" alt="Notice"><img src="./img/mainImg/Notice.jpg" /></a>
+					</li>
+					<li class="members">
+						<a href="./members.html" alt="Members"><img src="./img/mainImg/Members.jpg" /></a>
+					</li>
+					<li class="publications">
+						<a href="#" alt="Publications"><img src="./img/mainImg/Publications.jpg" /></a>
+					</li>
+					<li class="project">
+						<a href="#" alt="Project"><img src="./img/mainImg/Project.jpg" /></a>
+					</li>
+					<li class="gallery">
+						<a href="#" alt="Gallery"><img src="./img/mainImg/Gallery.jpg" /></a>
+					</li>
+					<li class="link">
+						<a href="#" Link><img src="./img/mainImg/link.jpg" /></a>
+					</li>
+				</ul>
+			</div>
+			<div id="contents">
+				<!--<div class="slideshow" data-transition="crossfade" data-speed="800" data-loop="true" data-skip="false">
+					<ul class="carousel">
+						<li class="slide">
+							<img src="img/mainImg/school.jpg" />
+						</li>
+						<li class="slide">
+							<img src="img/mainImg/nightwatching.jpg" />
+						</li>
+						<li class="slide">
+							<img src="img/mainImg/top.jpg" />
+						</li>
+					</ul>
+				</div>-->
+
+				<div class="camera_wrap camera_azure_skin">
+					<div data-src="img/slides/school.jpg" data-thumb="img/slides/thumbs/school.jpg"></div>
+					<div data-src="img/slides/nightwatching.jpg" data-thumb="img/slides/thumbs/nightwatching.jpg"></div>
+					<div data-src="img/slides/top.jpg" data-thumb="img/slides/thumbs/top.jpg"></div>
+				</div>
+			</div>
+			<div id="footer">
+				<span class="csos_foot">Computer Security & OS Lab, Dankook University</span>
+				<span class="address">경기도 용인시 수지구 죽전동  126 미디어센터 504, 505호</span>
+				<span class="tel">Tel. 031-8005-3255, 3245</span>
+				<span class="copyright">COPYRIGHT (C) 2013 단국대학교 Computer Security & OS Lab. ALL RIGHTS RESERVED</span>
+			</div>
+
+			<div class="remote hide" >
+				<a class="up" href="#">top</a>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.22.custom.min.js"></script>
+		<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+		<script type="text/javascript" src="js/slideshow.js"></script>
+		<script type="text/javascript" src="js/jquery.mobile.customized.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="js/camera.js"></script>
+		<script type="text/javascript" src="js/indexjQ.js"></script>
+	</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="secureLab" />
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Dankook Secure & OS Lab</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+		<!--<link href="css/style.css" rel="stylesheet"/>-->
+		<link href="css/pygments.css" rel="stylesheet"/>
+		<link href="css/slideshow.css" rel="stylesheet"/>
+		<style type="text/css">
+			#wrap{float : left; width: 100%; }
+			#header{float: left; width: 100%;}
+			.navbar {float:left; margin : 0 auto; width: 100%;}
+			.navbar .nav {float : right;}
+			i {margin : 0 2px 0 2px}
+			#contents{position: relative; float:left; width : 100%; height:700px; overflow-y: auto;}
+			
+			.slideshow{float:left; width: 100%; height:300px;}
+			.carousel{width:100%; height:300px;}
+			.carousel img {width:1400px; height:300px;}
+			
+			.slides-pagination a { text-align: center;}
+			.recentPaper{ float:left; width: 50%;}
+			.published { margin : 20px 0 20px 20px;}
+			.paperGroup{position: relative; width: 80%; margin : 20px; border: 2px solid #aaa; padding : 10px;}
+			.paperGroup li {margin: 10px;}
+			.paperGroup ul{margin: 0; padding: 0 0 10px 0;}
+			.paperGroup em{font-weight: bold;}
+			.paperGroup a{position: absolute; right: 10px; bottom: 10px;}
+			#footer { float: left; width: 100%; margin: 0 auto; text-align: center; border-top: 1px solid #aaa; padding-top: 10px;}
+		</style>
+	</head>
+	<body>
+		<div id="wrap" class="hide">
+			<div id="header">
+				<div class="navbar">
+					 <div class="navbar-inner">
+						<a class="brand" href="#">CSOS Lab</a> <!-- 랩 명은 보류함. 정해지면 다시...-->
+						<ul class="nav">
+							<li>
+								<a class="home" href="#">
+									<i class="icon-home"></i>
+									Home
+								</a>
+							</li>
+							<li>
+								<a class="member" href="#">
+									<i class="icon-ok"></i>
+									Notice
+								</a>
+							</li>
+							<li>
+								<a class="member" href="#">
+									<i class="icon-user"></i>
+									Members
+								</a>
+							</li>
+							<li>
+								<a class="member" href="#">
+									<i class="icon-file"></i>
+									Publications
+								</a>
+							</li>
+							<li>
+								<a class="member" href="#">
+									<i class="icon-calendar"></i>
+									Projects
+								</a>
+							</li>
+							<li>
+								<a class="member" href="#">
+									<i class="icon-picture"></i>
+									Gallary
+								</a>
+							</li>
+							<li>
+								<a class="member" href="#">
+									<i class="icon-share-alt"></i>
+									Link
+								</a>
+							</li>
+							<li>
+								<a class="member" href="#">
+									<i class="icon-cog"></i>
+									Login
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="contents">
+				<div class="slideshow" data-transition="crossfade" data-speed="800" data-loop="true" data-skip="false">
+					<ul class="carousel">
+						<li class="slide">
+							<img src="img/test1.jpeg" />
+						</li>
+						<li class="slide">
+							<img src="img/test2.jpeg" />
+						</li>
+						<li class="slide">
+							<img src="img/test3.jpeg" />
+						</li>
+					</ul>
+				</div>
+				<div class="recentPaper">
+					<h2 class="published">
+						Recent Published Paper
+					</h2>
+					<div class="paperGroup">
+						<ul class="paper">
+							<li class="paper1">
+								김동진, 정윤식, 윤광열, 유해영, 조성제, 김기연, 이진영, 김홍근, 이태승, 임재명, 원동호, <em>“보안기능의 무력화 공격을 예방하기 위한 위협분석 기반 소프트웨어 테스팅(Threat Analysis based Software Security Testing for preventing the Attacks to Incapacitate Security Features of Information Security systems)”</em>, 정보보호학회 논문지, 제 22권, 제5호, pp 1191-1204, 2012.10.
+							</li>
+							<li class="paper2">
+								이찬희, 박영웅, 임지혁, 김홍근, 이충현, 조성제, 양재수, <em>“안드로이드 플랫폼에서 앱 불법복제 방지용 접근제어 기법(Access Control Mechanism Preventing application Piracy on the Andorid Platform)”</em>, 정보과학회 논문지 : 컴퓨팅의 실제 및 레터, 제 18권, 제10호, pp. 692-700, 2012.10.
+							</li>
+						</ul>
+						<a href="#" class="more btn btn-success">more...</a>
+					</div>
+				</div>
+				
+			</div>
+			<div id="footer">
+				<div class="university">
+					Security & OS Lab, Dankook University, Republic of Korea
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="js/cloudmine.0.9.js"></script>   
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.22.custom.min.js"></script>
+		<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+		<script type="text/javascript" src="js/slideshow.js"></script>
+		<script type="text/javascript" src="js/indexjQ.js"></script>
+	</body>
+</html>
