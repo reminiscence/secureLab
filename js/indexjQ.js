@@ -92,8 +92,6 @@ $(function(){
 		$parentFrame = $('.member_main', parent.document);
 		$contents.css('height', '1700px');
 		$parentFrame.css('height', '1700px');
-		$('.content_student').fadeIn(1000);
-		console.log("test1");
 	});
 
 	$alumni.click(function(e){
@@ -105,8 +103,6 @@ $(function(){
 		$parentFrame = $('.member_main', parent.document);
 		$contents.css('height', '2300px');
 		$parentFrame.css('height', '2300px');
-		$('.content_student').fadeIn(1000);
-		console.log("test2");
 	});
 
 	// $more.click(function(e){
