@@ -97,8 +97,7 @@ $(function(){
 });
 
 function changeMembers(name, height){
-	var $contents = $('#contents'),
-	$menu_contents=$('.menu_contents');
+	var $menu_contents=$('.menu_contents');
 	
 	$menu_contents.empty();
 
