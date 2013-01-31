@@ -25,7 +25,7 @@ $(function(){
 
 	//slide show
 	// Create slideshow instances
-	if(this_url == 'http://localhost/~newlife8837/secureLab/index.html' || this_url == 'http://localhost/~newlife8837/secureLab/index.html#' || this_url == 'http://192.168.0.63/~newlife8837/secureLab/index.html#' || this_url == 'http://192.168.0.63/~newlife8837/secureLab/index.html'){
+	if(this_url == 'http://reminiscence.github.com/secureLab/index.html' || this_url == 'http://reminiscence.github.com/secureLab/index.html#'){
 		/*var $s = $('.slideshow').slides(),
 
 		    // Access an instance API
