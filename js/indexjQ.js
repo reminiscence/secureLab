@@ -1,7 +1,7 @@
 $(function(){
 	var $wrap = $("#wrap"),
 	$contents = $('#contents'),
-	$notice = $('.notice img'),
+	$notice = $('.notice'),
 	$members = $('.members'),
 	$publications = $('.publications'),
 	$project = $('.project'),
@@ -38,43 +38,6 @@ $(function(){
 		});
 		$wrap.fadeIn(500);
 	}
-
-	//menu img overlay
-	// $notice.hover(function(){
-	// 	$(this).attr('src','./img/mainImg/Notice2.jpg');
-	// }, function(){
-	// 	$(this).attr('src','./img/mainImg/Notice.jpg');
-	// });
-
-	// $members.hover(function(){
-	// 	$(this).attr('src','./img/mainImg/Members2.jpg');
-	// }, function(){
-	// 	$(this).attr('src','./img/mainImg/Members.jpg');
-	// });
-
-	// $publications.hover(function(){
-	// 	$(this).attr('src','./img/mainImg/Publications2.jpg');
-	// }, function(){
-	// 	$(this).attr('src','./img/mainImg/Publications.jpg');
-	// });
-
-	// $project.hover(function(){
-	// 	$(this).attr('src','./img/mainImg/Project2.jpg');
-	// }, function(){
-	// 	$(this).attr('src','./img/mainImg/Project.jpg');
-	// });
-
-	// $gallery.hover(function(){
-	// 	$(this).attr('src','./img/mainImg/Gallery2.jpg');
-	// }, function(){
-	// 	$(this).attr('src','./img/mainImg/Gallery.jpg');
-	// });
-
-	// $link.hover(function(){
-	// 	$(this).attr('src','./img/mainImg/link2.jpg');
-	// }, function(){
-	// 	$(this).attr('src','./img/mainImg/link.jpg');
-	// });
 
 	$members.click(function(e){
 		e.preventDefault();
