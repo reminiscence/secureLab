@@ -109,7 +109,7 @@ function changeMembers(name, height){
 	$contents.css('height', height+'px');
 	$parentFrame.css('height', height+'px');
 	$contents_student.fadeIn(1000);
-	console.log("jebal dela");
+	console.log($contents_student);
 }
 
 function changeContents(name, height){
