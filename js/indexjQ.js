@@ -85,46 +85,36 @@ $(function(){
 
 	$student.click(function(e){
 		e.preventDefault();
-		$menu_contents.empty();
 
-		$menu_contents.append('<iframe src="./member_student.html" width="725px" height="1700px" frameborder="0" scrolling="no" style="float:left;"></iframe>');
-		$contents=$('#contents', parent.parent.document);
-		$parentFrame = $('.member_main', parent.document);
-		$contents.css('height', '1700px');
-		$parentFrame.css('height', '1700px');
+		changeMembers('./member_student.html', 1700);
 	});
 
 	$alumni.click(function(e){
 		e.preventDefault();
-		$menu_contents.empty();
 
-		$menu_contents.append('<iframe src="./member_alumni.html" width="725px" height="2300px" frameborder="0" scrolling="no" style="float:left;"></iframe>');
-		$contents=$('#contents', parent.parent.document);
-		$parentFrame = $('.member_main', parent.document);
-		$contents.css('height', '2300px');
-		$parentFrame.css('height', '2300px');
+		changeMembers('./member_alumni.html', 2300);
 	});
-
-	// $more.click(function(e){
-	// 	if($moreClickCnt == 0){
-	// 		e.preventDefault();	
-	// 		$paper = $('.paper');
-	// 		$.get('jst/recentMorePaper.jst', function(tmpl){
-	// 			$.tmpl(tmpl).appendTo($paper);	
-	// 		});
-
-	// 		$moreClickCnt++;
-	// 	} else {
-	// 		$moreClickCnt = 0;
-	// 	}
-		
-	// });
 });
+
+function changeMembers(name, height){
+	var $contents = $('#contents'),
+	$menu_contents=$('.menu_contents'),
+	$content_student = $('.content_student');
+	
+	$menu_contents.empty();
+
+	$menu_contents.append('<iframe src="'+name+'" width="725px" height="'+height+'px" frameborder="0" scrolling="no" style="float:left;"></iframe>');
+	$contents=$('#contents', parent.parent.document);
+	$parentFrame = $('.member_main', parent.document);
+	$contents.css('height', height+'px');
+	$parentFrame.css('height', height+'px');
+	$content_student.fadeIn(1000);
+}
 
 function changeContents(name, height){
 	var $contents = $('#contents');
 	var $remote = $('.remote');
-	$contents.append('<iframe class="member_main" src="./members.html" frameborder="0" scrolling="auto" style="float:left; width:980px; height :' +height+'px;" ></iframe>');
+	$contents.append('<iframe class="member_main" src="'+name+'" frameborder="0" scrolling="auto" style="float:left; width:980px; height :' +height+'px;" ></iframe>');
 	$contents.css('height',height+'px');
 	$remote.fadeIn(1000);
 }
