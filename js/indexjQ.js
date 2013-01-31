@@ -36,7 +36,7 @@ $(function(){
 			thumbnails: true,
 			time : 4000
 		});
-		$wrap.fadeIn(1000);
+		$wrap.fadeIn(500);
 	}
 
 	//menu img overlay
