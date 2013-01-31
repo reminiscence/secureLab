@@ -99,7 +99,7 @@ $(function(){
 function changeMembers(name, height){
 	var $contents = $('#contents'),
 	$menu_contents=$('.menu_contents'),
-	$content_student = $('.content_student');
+	$contents_student = $('.contents_student');
 	
 	$menu_contents.empty();
 
@@ -108,7 +108,7 @@ function changeMembers(name, height){
 	$parentFrame = $('.member_main', parent.document);
 	$contents.css('height', height+'px');
 	$parentFrame.css('height', height+'px');
-	$content_student.fadeIn(1000);
+	$contents_student.fadeIn(1000);
 	console.log("jebal dela");
 }
 
