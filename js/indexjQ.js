@@ -33,7 +33,8 @@ $(function(){
 		*/
 		$('.camera_wrap').camera({ //here I declared some settings, the height and the presence of the thumbnails 
 			width: '50%',
-			height: '41%',
+			height: '40%',
+			alignment : 'topLeft',
 			thumbnails: true,
 			time : 4000
 		});
