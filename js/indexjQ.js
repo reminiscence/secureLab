@@ -13,19 +13,11 @@ $(function(){
 	$doc =$(document.body),
 	$alumni = $('.alumni');
 	
-	var this_url = document.location.href;
-
-	$doc.bind('aaaa', function(){
-		$content = $('#contents');
-		$content.css('height', '2400px');
-		console.log("test");
-		console.log($contents);
-		console.log($content);
-	});
-
+	var this_url = document.location.href,
+	string = 'http://reminiscence.github.com/secureLab/index.html';
 	//slide show
 	// Create slideshow instances
-	if(this_url == 'http://reminiscence.github.com/secureLab/index.html' || this_url == 'http://reminiscence.github.com/secureLab/index.html#'){
+	if(this_url == string || this_url == string + '#'){
 		/*var $s = $('.slideshow').slides(),
 
 		    // Access an instance API
@@ -34,7 +26,6 @@ $(function(){
 		$('.camera_wrap').camera({ //here I declared some settings, the height and the presence of the thumbnails 
 			width: '50%',
 			height: '40%',
-			alignment : 'topLeft',
 			thumbnails: true,
 			time : 4000
 		});
